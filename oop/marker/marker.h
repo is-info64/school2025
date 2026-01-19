@@ -1,3 +1,6 @@
+#ifndef MARKER_H_
+#define MARKER_H_
+
 #include <iostream>
 
 class Marker {
@@ -25,15 +28,4 @@ public:
 	void Draw();
 	void Erase();
 };
-
-
-
-
-
-
-
-
-
-
-
-
+#endif

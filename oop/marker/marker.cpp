@@ -3,7 +3,6 @@
 Marker::Marker(Color clr, int capacity) {
 	this->capacity = capacity;
 	this->num_chars = 0;
-	std::cout << this->capacity;
 	this->buff = new char[this->capacity];
 	this->clr = clr;
 }
@@ -67,16 +66,3 @@ void Marker::Draw() {
 void Marker::Erase() {
 	this->num_chars = 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
