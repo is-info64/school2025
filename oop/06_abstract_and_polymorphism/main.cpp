@@ -38,20 +38,22 @@ public:
 		std::cout << "kurlyk\n";
 	}
 };
-
+enum Anims{
+	RABBIT, SPARROW, PIGEON
+};
 int main() {
 	std::cout << "Choose character:\n\t1. Rabbit\n\t2. Sparrow\n\t3. Pigeon\nChooice: ";
 	int choice;
 	std::cin >> choice;
 	Animal* anim;
 	switch (choice) {
-		case 1:
+		case Anims::RABBIT:
 			anim = new Rabbit();
 		break;
-		case 2:
+		case Anims::SPARROW:
 			anim = new Sparrow();
 		break;
-		case 3:
+		case Anims::PIGEON:
 			anim = new Pigeon();
 		break;
 		default:
